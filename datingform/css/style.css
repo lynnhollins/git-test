@@ -1,0 +1,59 @@
+body {
+    background: #F31559;
+    font-family: verdana, arial, sans-serif;
+}
+
+p {
+    margin: 0
+}
+
+legend {
+    background: #FF52A2;
+    border-radius: 10px;
+    color: white;
+    padding: 12px;
+}
+
+fieldset {
+    background: #FFB07F;
+    border: 10px solid #FFECAF;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    width: 720px;
+}
+
+div {
+    margin: 10px;
+
+}
+
+label {
+    display: inline-block;
+    text-align: right;
+    vertical-align: top;
+}
+
+input[type="radio"]+label, input[type="checkbox"]+label {
+    width: auto;
+}
+
+.range-caption {
+    background: #F31559;
+    color: white;
+    padding: 6px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+div:hover {
+    color: blue;
+    
+}
+
+input[type="submit"] {
+    padding: 15px;
+    background-color: #FFB07F;
+    width: 175px;
+    border: 10px solid #FFECAF;
+    border-radius: 20px;
+}

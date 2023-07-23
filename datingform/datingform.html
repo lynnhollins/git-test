@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be Mine Dating Website Website</title>
+    <link rel="stylesheet" href="css/style.css">
+   
+</head>
+<body>
+    <h1>Enter the Details For Be Mine Dating Website</h1>
+
+    <form action="https://us-central1-nucamp-production.cloudfunctions.net/post/formdata" method="post" >
+        <fieldset>
+            <legend>Your Face</legend>
+            <div>
+                    <label for="avatar">Upload Your Image: </label>
+                    <input type="file" id="avatar" name="avatar" required>
+            </div>
+            <p>Image Preview: </p>
+            <img id="preview" width="500px">
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Your Details</legend>
+            <div>
+                <label for="name">Name: </label>
+                <input type="name" id="name" name="name" placeholder="Your full name" required>    
+            </div>
+            <div>
+                <label for="gender">Gender: </label>
+
+                <input type="radio" id="woman" name="gender" value="Woman" required>
+                <label for="woman">Woman</label> 
+                <input type="radio" id="man" name="gender" value="man" required> 
+                <label for="woman">Man</label>   
+            </div>
+            <div>
+                <label for="Age">Age: </label>
+                <input type="number" id="age" name="age" placeholder="Age">  
+            </div>
+            <div>
+                <label for="dob">Date Of Birth: </label>
+                <input type="date" id="dob" name="dob">  
+            </div>
+            <div>
+                <label for="color">Favorite Color: </label>
+                <input type="color" id="color" name="color">  
+            </div>
+            <div>
+                <label for="country">Country: </label>
+                <select>
+                    <option value="">Choose a Country</option>
+                    <option value="costarica">Costa Rica</option>
+                    <option value="romania">Romania</option>
+                    <option value="japan">Japan</option>
+                    <option value="phillipines">Phillipines</option>
+                    <option values="usa">USA</option>
+                </select>
+            </div>
+            <div>
+                <label for="salary">Salary: </label>
+                <span class="range-caption">Beans and Rice</span>
+                <input type="range" id="salary" name="salary" min="0" max="100" value="50">
+                <span class="range-caption">Filet Mignon</span>
+            </div>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Your Contact Information</legend>
+            <div>
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" placeholder="example@email.com" required>  
+            </div>
+            <div>
+                <label for="phone">Phone: </label>
+                <input type="tel" id="phone" name="phone" placeholder="000-000-0000">
+            </div>
+            <div>
+                <label for="address">Address: </label>
+                <textarea col="40" id="address" name="address"></textarea>
+            </div>
+            <div>
+                <label>Contact Methods: </label>
+                <input type="checkbox" name="contact" id="emailCheckbox" value="email">
+                <label for="emailCheckbox">Email </label>
+                <input type="checkbox" name="contact" id="phoneCheckbox" value="phone">
+                <label for="phoneCheckbox">Phone</label>
+            </div>
+        </fieldset>
+        <div>
+            <input type="submit">
+        </div>
+</form>
+<script src="https://url.nucamp.co/datingjs"></script>
+</body>
+</html>
